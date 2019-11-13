@@ -15,6 +15,7 @@ var input string
 func main() {
 
 	whenToStop = time.Now().Add(+time.Second * 15)
+	
 	fmt.Println("Type 'exit' and press 'Enter' in order to stop revolving.")
 	go spinner(250 * time.Millisecond)
 	for {
